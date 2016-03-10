@@ -1,10 +1,10 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.0)
 
 Project(ScribbleInteractorStyle)
 SET(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 FIND_PACKAGE(VTK REQUIRED)
-INCLUDE( ${USE_VTK_FILE} )
+INCLUDE( ${VTK_USE_FILE} )
 
 set(ScribbleInteractorStyle_libraries ${ScribbleInteractorStyle_libraries} ${VTK_LIBRARIES})
 
